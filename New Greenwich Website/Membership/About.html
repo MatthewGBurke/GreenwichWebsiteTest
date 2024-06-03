@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Import Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Import CSS General Greenwich style-->
+  <link rel="stylesheet" href="../style.css">
+  <!--Important Greenwich Football Club Key Information-->
+  <title>Greenwich Sports Club | Home </title>
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Greenwich Sports Club,Sydney,Australia,Greenwich,Greenwich Football Club,Greenwich Netball,Football,Soccer,Womens Football,Womens Soccer,Womens Football Sydney,Womens Soccer Sydney,Netball,MiniRoos,Junior Football,Senior Football,Junior Netball,Senior Netball,NetSetGo">
+  <link rel="icon" type="image/x-icon" href="../Assets/GSCLogo4xTransparent.png">
+  
+  <!-- Import JQuery then Bootstrap JS and then Personal Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</head>
+
+<body>
+  
+  <!-- Nav Bar-->
+  <nav id="nav" class="container-fluid navbar sticky-top navbar-expand-lg nav-content">
+      <a class="navbar-brand logo-text ps-5" href="../index.html">
+        <img src="../Assets/GSCLogo4xTransparent.png" alt="Greenwich Sports Club Logo" width="100" height="100" class="d-inline-block align-text-center nav-logo">
+        Greenwich Sports Club
+      </a>
+      <!--Collapsable Navbar-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        
+        <ul class = "navbar-nav pe-5">
+
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+
+          <li class="nav-item">
+              <a class="nav-link"  href="./Membership/About.html">Membership</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Membership/About.html">About</a></li>
+                <li><a class="dropdown-item"href="about/childsafe.html">Fees</a></li>
+                <li><a class="dropdown-item"href="about/wwcpp.html">Member Protection</a></li>
+                <li><a class="dropdown-item" href="about/membership_fees.html">Working With Children</a></li>
+                <li><a class="dropdown-item" href="about/active_kids.html">Active Kids</a></li>
+              </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="../Football/Info.html">Football</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Game Day</a></li>
+              <li><a class="dropdown-item"href="#">Junior</a></li>
+              <li><a class="dropdown-item"href="../Football/Senior.html">Senior</a></li>
+              <li><a class="dropdown-item" href="#">Coaching</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">Netball</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Junior</a></li>
+              <li><a class="dropdown-item"href="#">Senior</a></li>
+              <li><a class="dropdown-item"href="#">Coaching</a></li>
+              <li><a class="dropdown-item" href="#">Umpiring</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">Club</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item"href="#">Merchandise</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="../Contacts.html" class="nav-link">Contacts</a></li>
+        </ul>
+      </div>
+  </nav>
+    <!--Build space for nav bar at top of page-->
+      <div id = "nav-space" class="container-fluid">
+      </div>
+
+
+   <!--Home Page Content --> 
+  <main>
+    <!-- Welcome -->
+    <section id = "welcome" class = "container">
+        <div class="text-center mt-5">
+          <div class="row">
+            <div class="col">
+              <h1>Greenwich Sports Club</h1>
+            </div>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col p-5"> 
+              <P>Greenwich Sports Club was founded as a community club in 1936 committed to enhancing the lives of all its members and the spirit of its community through participation in sport; ensuring fairness in attitude, respect, equity in action and integrity; and providing providing friendship and enjoyment. Today, GSC offers a variety of football and netball programs for over 500 children and adults—from Under 6 to Over 45. The Club is proud of its community-based roots yet also pleased to field many competition winners across all age groups in past seasons.
+              </P> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col intro-photo">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Build Sports Information Links -->
+    <section id = "info" class = "container">
+      <div class="text-center p-5">
+        <div class="row p-4">
+          <div class="col">
+            <h2> Sports </h2> 
+          </div>
+        </div>
+
+        <div class="text-read">
+          <p >Whether you are new to the area or just looking for a friendly place to play
+          sport, GSC is a fantastic choice.  If you are interested in playing football 
+          for Greenwich Sports Club, please contact the appropriate 
+          <a href="contact/index.html#footballAgeGroupCoordinator" title="Football Age Group Coordinator">age group coordinator</a> 
+          with any enquiries. For netball, please contact the <a href="mailto:netball@greenwichsportsclub.com.au" target="_top" title="Netball Convenor">netball convenor</a>. 
+          </p>
+        </div>
+      </section>
+   
+      <!--Call to Play-->
+      <section class = "container-fluid">
+        <div class="row py-4 card-background">
+          <div class="col-md-1 my-3">
+          </div>
+          <div class="col-md-5 my-3 d-flex justify-content-center"> 
+            <div class="card text-center" style="width: 20rem;">
+              <img src="../Assets/footballPlaying.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Football</h5>
+                <p class="card-text">Registrations for the 2024 Netball season are now open</p>
+                <a href="#" class="btn btn-danger">Find Out More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 my-3 d-flex justify-content-center"> 
+            <div class="card text-center" style="width: 20rem;">
+              <img src="../Assets/netballPlaying.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Netball</h5>
+                <p class="card-text">Registrations for the 2024 Football winter season are now open</p>
+                <a href="#" class="btn btn-danger">Find Out More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 my-3">
+          </div>
+        </div>
+       </section>
+    
+    <!-- Club News Tab -->
+    <section  class = "container">
+        <div class="mt-5 row justify-content-start">
+          
+          <div class="col p-4 text-center"> 
+            <h2>Club News</h2>
+          </div>
+          <!--News #1-->
+          <div class="row gx-5 club-section pt-5">
+            <div class="col-md-6 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">Important</span>
+              <h4>The Commitee urgently needs volunteers</h4>
+              <p class="text-muted">
+                The committee urgently needs volunteers, particularly for the roles of Registrar, Secretary, Communications and Grounds Manager. 
+                If you could help the committee in any way, please contact: president@greenwichsportsclub.com.au
+              </p>
+              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Contact</button>
+            </div>
+          </div>
+          
+          <!--News #2-->
+          <div class="row gx-5 club-section pt-5">
+            <div class="col-md-6 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h4>Congratulations Award Winners</h4>
+              <p class="text-muted">
+                Congratulations to our 2022 Award Winners
+              </p>
+              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Sponsors Tab -->
+    <section id = "sponsors" class = "container">
+      <div class="text-center mt-5">
+        <div class="row justify-content-start">
+          <div class="col p-4"> 
+           <h2>Sponsors</h2>
+          </div>
+          <div><p>INsert Sponsor Here</p></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Short Summary -->
+    <section id = "short-summary" class = "container">
+      <div class="text-center mt-5">
+        <div class="row justify-content-start">
+          <div class="col p-4"> 
+
+            <p>For general Club enquiries please contact the Secretary on secretary@greenwichsportsclub.com.au. </p>
+            <p> For all other club contact details, please click here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+
+  <!-- Footer Tab -->
+    <footer id="footer" class="container-fluid text-center pt-3">
+      <div class="footer-link-flex">
+        <a class = "nav-link nav-item" href="../index.html">Home</a> 
+        <a class = "nav-link nav-item" href="./Membership/About.html">Membership</a> 
+        <a class = "nav-link nav-item" href="../Football/Info.html">Football</a>
+        <a class = "nav-link nav-item" href="../Netball/Info.html">Netball</a>
+        <a class = "nav-link nav-item" href="#">Club</a>
+        <a class = "nav-link nav-item" href="../Contacts.html">Contacts</a>
+        <a class = "nav-link nav-item" href="#">Document Library</a>
+        <a class = "nav-link nav-item" href="#">Site Map</a> 
+      </div>
+        <p>
+          <img src="../Assets/GSCLogo4xTransparent.png" alt="Greenwich Sports Club Logo" width="100" height="100" class="bi me-2">
+        </p>
+          <p class = "copyright"> ©  2024 Greenwich Sports Club. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
