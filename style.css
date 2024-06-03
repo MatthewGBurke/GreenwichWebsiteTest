@@ -34,6 +34,7 @@ h4{
   .logo-text{
     font-weight: bold;
     color: black;
+    margin-left: 4rem;
   }
   .nav-link{
     font-weight: bold;
@@ -67,6 +68,20 @@ h4{
       height: 6rem;
     } 
   }
+
+  /* High-resolution screens */
+@media only screen and (min-resolution: 2dppx) {
+  /* Styles for high pixel density devices */
+  .nav-logo {
+    width: 4rem;
+  }
+  #nav-space{
+    height: 6rem;
+  } 
+  .logo-text{
+  margin-left: 2rem;
+  }
+}
 
 /* ----------------------- Main ------------- */
 
