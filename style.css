@@ -18,7 +18,8 @@ h4{
 /* Nav Bar Styling Extra */
   #nav{
     background-color: #D2232A;
-    position:fixed
+    position:fixed;
+    z-index: +1;
   }
   .nav-link{
     color: white;
@@ -53,19 +54,18 @@ h4{
   }
   /* Push start of page below NavBar */
   #nav-space{
-    height: 130px;
-  }
+    height: 7rem;
+    }
 
 
   /* Nav Bar change for small devices */
   @media (max-width: 768.5px) {
     .nav-logo {
-      height: 60px;
-      width: 60px;
+      width: 4rem;
     }
     #nav-space{
-      height: 95px;
-    }
+      height: 6rem;
+    } 
   }
 
 /* ----------------------- Main ------------- */
@@ -87,10 +87,10 @@ h4{
 
     /* Custom CSS for responsive padding */
     @media (min-width: 768.5px) {
-      .text-read {
+      /*.text-read {
         padding-left: 40px;
         padding-right: 40px;
-      }
+      } */
     }
  
     .card-background{
