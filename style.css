@@ -77,20 +77,11 @@ div.page {
     #nav-space{
       height: 6rem;
     } 
+       .logo-text{
+      margin-left: 0.5rem;
+      }
   }
-  /* High-resolution screens */
-  @media only screen and (min-resolution: 2.5dppx) {
-    /* Styles for high pixel density devices need a smaller nav bar so remove margin further*/
-    .nav-logo {
-      width: 4rem;
-    }
-    #nav-space{
-      height: 6rem;
-    } 
-    .logo-text{
-    margin-left: 0.5rem;
-    }
-  }
+
 
 /*Footer Stylings */
   #footer{
