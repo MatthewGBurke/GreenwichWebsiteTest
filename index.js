@@ -1,25 +1,131 @@
+// Wait for document for fully load before beginning all JS Code
+// Matthew Burke 06/2024
 $(document).ready(function() {
 
-    // Calculate the height of <header> - currently deprecated
-    // Use outerHeight() instead of height() if have padding
-    var aboveHeight = $('nav').outerHeight();
+//Function to pull in repeating HTML components with dynamic relative pathing
+// Navbar
+    function loadNavbar() {
+      // Determine the current file path
+      var path = window.location.pathname;
+      var directoryLevel = (path.match(/\//g) || []).length - 1; // Adjust for leading slash
 
-    // when scroll
-    $(window).scroll(function(){
+      // Adjust the relative path to the navbar.html
+      var relativePath = '';
+      for (var i = 1; i < directoryLevel; i++) {
+        relativePath += '../';
+      }
+      relativePath += 'navbar.html';
+      //Check working
+      console.log("Loading navbar from: ", relativePath);
 
-        // if scrolled down more than the header’s height
-        if ($(window).scrollTop() > aboveHeight){
-
-            // if yes, add “fixed” class to the <nav>
-            // add padding top to the #content 
-            // (value is same as the height of the nav)
-            $('nav').addClass('fixed').css('top','0').next().css('padding-top','60px');
-
+      // Load the navbar using the determined path
+      $("#navbar-placeholder").load(relativePath, function(response, status, xhr) {
+        if (status == "error") {
+          var msg = "Sorry but there was an error: ";
+          $("#navbar-placeholder").html(msg + xhr.status + " " + xhr.statusText);
         } else {
+            console.log("Navbar loaded successfully.");
 
-            // when scroll up or less than aboveHeight,
-            // remove the “fixed” class, and the padding-top
-            $('nav').removeClass('fixed').next().css('padding-top','0');
+          // Adjust image paths after loading the navbar
+          $("#navbar-placeholder img[data-src]").each(function() {
+            var img = $(this);
+            var src = img.data('src');
+
+            // Build correct path to the image
+            var adjustedSrc = '';
+              for (var i = 1; i < directoryLevel; i++) {
+                adjustedSrc += '../';
+              }
+              adjustedSrc += src;
+
+            console.log("Original src: ", src);
+            console.log("Adjusted src: ", adjustedSrc);
+
+            img.attr('src', adjustedSrc);
+          });
+          //Adjust links based on relative path after loading navbar
+          $("#navbar-placeholder a[data-href]").each(function() {
+            var link = $(this);
+            var href = link.data('href');
+
+            var adjustedHref = '';
+            for (var i = 1; i < directoryLevel; i++) {
+              adjustedHref += '../';
+            }
+            adjustedHref += href;
+
+            console.log("Original href: ", href);
+            console.log("Adjusted href: ", adjustedHref);
+
+            link.attr('href', adjustedHref);
+          });
+
         }
-    });
-});
+      });
+    }
+    loadNavbar();
+    //Repeat for Footer
+    function loadFooter() {
+        // Determine the current file path
+        var path = window.location.pathname;
+        var directoryLevel = (path.match(/\//g) || []).length - 1; // Adjust for leading slash
+
+        // Adjust the relative path to the footer.html
+        var relativePath = '';
+        for (var i = 1; i < directoryLevel; i++) {
+          relativePath += '../';
+        }
+        relativePath += 'footer.html';
+
+        console.log("Loading footer from: ", relativePath);
+
+        // Load the footer using the determined path
+        $("#footer-placeholder").load(relativePath, function(response, status, xhr) {
+          if (status == "error") {
+            var msg = "Sorry but there was an error: ";
+            $("#footer-placeholder").html(msg + xhr.status + " " + xhr.statusText);
+          } else {
+            console.log("Footer loaded successfully.");
+
+            // Adjust image paths after loading the footer
+            $("#footer-placeholder img[data-src]").each(function() {
+              var img = $(this);
+              var src = img.data('src');
+
+              // Build the correct path to the image
+              var adjustedSrc = '';
+              for (var i = 1; i < directoryLevel; i++) {
+                adjustedSrc += '../';
+              }
+              adjustedSrc += src;
+
+              console.log("Original src: ", src);
+              console.log("Adjusted src: ", adjustedSrc);
+
+              img.attr('src', adjustedSrc);
+            });
+            //Adjust links based on relative path after loading footer
+            $("#footer-placeholder a[data-href]").each(function() {
+                var link = $(this);
+                var href = link.data('href');
+  
+                var adjustedHref = '';
+                for (var i = 1; i < directoryLevel; i++) {
+                  adjustedHref += '../';
+                }
+                adjustedHref += href;
+  
+                console.log("Original href: ", href);
+                console.log("Adjusted href: ", adjustedHref);
+  
+                link.attr('href', adjustedHref);
+              });
+          }
+        });
+      }
+
+      loadFooter();
+
+
+
+  });
