@@ -64,6 +64,7 @@ $(document).ready(function() {
       });
     }
     loadNavbar();
+    
     //Repeat for Footer
     function loadFooter() {
         // Determine the current file path
@@ -125,7 +126,5 @@ $(document).ready(function() {
       }
 
       loadFooter();
-
-
 
   });

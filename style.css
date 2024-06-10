@@ -11,16 +11,58 @@ h1 {
 h2 {
   font-weight: bold;
 }
+h3{
+  font-weight: bold;
+}
 h4{
   font-weight: bold;
 }
-/* Page layout for paragraph readability */
-div.page {
-  max-width: 65rem;
+a {
+  text-decoration: underline;
+  color:#333333;
+  background:transparent;
+}
+a:hover{
+  color:#D2232A;
+}
+hr{
+  color: #D2232A;
+  background-color: #D2232A;
+  border: none;
+  height: 3px;
+  opacity: 100;
+}
+
+.item-sit{
+  display:flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.background-1{
+  background-color: #FFFFFF;
+}
+
+.background-2{
+  background-color: #F1F2F3;
+}
+
+.background-3{
+  background-color: #D9DBDC;
+
+}
+
+
+/* Page layout for text/paragraph readability */
+.page {
+  max-width: 70rem;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 1.5rem;
   position: relative;
+}
+
+.text{
+  max-width: 50rem;
 }
 
 
@@ -67,8 +109,6 @@ div.page {
     height: 7rem;
     margin-bottom: 3rem;
     }
-
-
   /* Nav Bar change for small devices - shrink nav*/
   @media (max-width: 768.5px) {
     .nav-logo {
@@ -77,7 +117,7 @@ div.page {
     #nav-space{
       height: 6rem;
     } 
-       .logo-text{
+    .logo-text{
       margin-left: 0.5rem;
       }
   }
@@ -99,10 +139,10 @@ div.page {
   }
 
 /* ----------------------- Main ------------------- */
-  /* Home Page CSS */
+  /* Home Page Specific CSS */
     /* Intro Text */
     .intro-photo{
-    background-image: url('./Assets/bob-campbell-oval.jpg');
+    background-image: url('./images/other/bob-campbell-oval.jpg');
     /*width: 95%;*/
     height: 80vh; 
     background-size: cover; /* Ensures the image covers the whole div */
@@ -115,11 +155,6 @@ div.page {
     position: relative;
     }
 
-      .card-background{
-        background-color: #FFFFFF;
-      }
-      
-
     /* Club section */
     .club-section {
     background-color: #D9DBDC;
@@ -131,8 +166,76 @@ div.page {
     }
 
 
-
-    /* Gmaps */
-    .gmaps{
-      text-align:center
+    /* About Page Specific */
+    .tab-container {
+      display: flex;
+      flex-direction: row;
+      gap: 6vw;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
     }
+      .tab {
+        padding: 4vw 4vw;
+        font-size: 2vw;
+        /* flex makes each tab take up an equal portion of the container's width. */
+        flex:1;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #B31B21;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .tab:hover {
+        background-color: #99171A;
+        transform: translateY(-5px);
+    }
+    /* for small containers */
+    @media (max-width: 768.5px) {
+      .tab-container{
+      flex-direction: column;
+      max-width: 400px;
+      }
+      .tab{ padding: 10vw 0.5vw;
+        font-size: 5vw;
+      }
+    }
+
+  /*Contact Page Specific CSS*/
+    /* Bootstrap Table Style Changes*/
+    .table-style th{
+      background-color: #D9DBDC  !important;
+      border-bottom: 1px dashed black;
+     
+    }
+    .table-style td{
+      background-color: #F1F2F3 !important;
+    }
+    .table-style tr{
+      border-left: 1px solid #D9DBDC;
+      border-right: 1px solid #D9DBDC;
+    }
+    /* Define table widths for uniformity */
+    .style-position{
+      width: 325px;
+    }
+    .style-person{
+      width: 200px;
+    }
+  
+    /* Gmaps */
+  #map-container {
+      overflow: hidden;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      position: relative;
+      height: 0;
+  }
+  #map-container iframe {
+      position:absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+  }

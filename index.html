@@ -11,7 +11,7 @@
   <!--Important Greenwich Football Club Key Information-->
   <title>Greenwich Sports Club | Home </title>
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Greenwich Sports Club,Sydney,Australia,Greenwich,Greenwich Football Club,Greenwich Netball,Football,Soccer,Womens Football,Womens Soccer,Womens Football Sydney,Womens Soccer Sydney,Netball,MiniRoos,Junior Football,Senior Football,Junior Netball,Senior Netball,NetSetGo">
-  <link rel="icon" type="image/x-icon" href="./Assets/GSCLogo4xTransparent.png">
+  <link rel="icon" type="image/x-icon" href="./images/logos/GSCLogo4xTransparent.png">
   
   <!-- Import JQuery then Bootstrap JS and then Personal Javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -24,35 +24,35 @@
   <!-- Insert Navbar-->
   <div id="navbar-placeholder"></div>
 
-  <!--Build space for nav bar at top of page-->
-  <div id = "nav-space" class="container-fluid"></div>
-
+ 
    <!--Content --> 
   <main>
     <!-- Welcome -->
-    <section id = "welcome" class = "container">
-        <div class="text-center">
-          <div class="row">
-            <div class="col">
-              <h1>Welcome to Greenwich Sports Club</h1>
-            </div>
-          </div>
-          <div class="row justify-content-start">
-            <div class="col p-5 intro-text"> 
-              <P>A community sports club in Sydney's Lower North Shore with teams in Senior Mens and Womens Football, MiniRoos, Junior Mixed and Girl's Football, NetSetGo and Junior Girls Netball.
-              </P> 
-            </div>
-          </div>
-          <!--Photo insert-->
-          <div class="row">
-            <div class="col intro-photo">
-            </div>
+    <section class = "container">
+       <!--Build space for nav bar at top of page-->
+      <div id = "nav-space"> </div>
+      <div class="text-center">
+        <div class="row">
+          <div class="col">
+            <h1>Welcome to Greenwich Sports Club</h1>
           </div>
         </div>
+        <div class="row justify-content-start">
+          <div class="col p-5 intro-text"> 
+            <P>A community sports club in Sydney's Lower North Shore with teams in Senior Mens and Womens Football, MiniRoos, Junior Mixed and Girl's Football, NetSetGo and Junior Girls Netball.
+            </P> 
+          </div>
+        </div>
+        <!--Photo insert-->
+        <div class="row">
+          <div class="col intro-photo">
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Build Sports Information Links -->
-    <section id = "info" class = "container">
+    <section class = "container">
       <div class="text-center row p-4">
         <div class="col">
           <h2> Sports </h2> 
@@ -63,7 +63,7 @@
           <p >Whether you are new to the area or just looking for a friendly place to play
           sport, GSC is a fantastic choice.  If you are interested in playing football 
           for Greenwich Sports Club, please contact the appropriate 
-          <a href="contact/index.html#footballAgeGroupCoordinator" title="Football Age Group Coordinator">age group coordinator</a> 
+          <a class= "link" href="./contact.html#football-contact" title="Football Age Group Coordinator">age group coordinator</a> 
           with any enquiries. For netball, please contact the <a href="mailto:netball@greenwichsportsclub.com.au" target="_top" title="Netball Convenor">netball convenor</a>. 
           </p>
         </div>
@@ -72,12 +72,11 @@
    
       <!--Call to Play-->
       <section class = "container-fluid">
-        <div class="row py-4 card-background">
-          <div class="col-md-2 my-3">
-          </div>
-          <div class="col-md-4 my-3 d-flex justify-content-center"> 
+        <div class="row py-4 background-1">
+          <div class="col-md-2"></div>
+          <div class="col-md-4 my-3 item-sit"> 
             <div class="card text-center" style="width: 20rem;">
-              <img src="./Assets/footballPlaying.jpg" class="card-img-top" alt="...">
+              <img src="./images/football/footballPlaying.jpg" class="card-img-top" alt="Playing Football">
               <div class="card-body">
                 <h5 class="card-title">Football</h5>
                 <p class="card-text">Registrations for the 2024 Football winter season are now open</p>
@@ -85,9 +84,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 my-3 d-flex justify-content-center"> 
+          <div class="col-md-4 my-3 item-sit"> 
             <div class="card text-center" style="width: 20rem;">
-              <img src="./Assets/netballPlaying.jpg" class="card-img-top" alt="...">
+              <img src="./images/netball/netballPlaying.jpg" class="card-img-top" alt="Playing Netball">
               <div class="card-body">
                 <h5 class="card-title">Netball</h5>
                 <p class="card-text">Registrations for the 2024 Netball winter season are now open</p>
@@ -95,8 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 my-3">
-          </div>
+          <div class="col-md-2"></div>
         </div>
        </section>
     
@@ -111,7 +109,7 @@
           <div class="row gx-5 club-section pt-5">
             <div class="col-md-6 mb-4">
               <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+                <img src="./images/football/goalScored.jpg" class="img-fluid" />
                 <a href="#!">
                   <div class="mask"></div>
                 </a>
@@ -157,13 +155,13 @@
           <div class="col p-4"> 
            <h2>Sponsors</h2>
           </div>
-          <div><p>INsert Sponsor Here</p></div>
+          <div><p>Insert Sponsors Here</p></div>
         </div>
       </div>
     </section>
     
     <!-- Short Summary -->
-    <section id = "short-summary" class = "container">
+    <section class = "container">
       <div class="text-center mt-5">
         <div class="row justify-content-start">
           <div class="col p-4"> 
