@@ -25,12 +25,14 @@ a {
 a:hover{
   color:#D2232A;
 }
+
 hr{
   color: #D2232A;
   background-color: #D2232A;
   border: none;
   height: 3px;
   opacity: 100;
+  margin-bottom: 2rem;
 }
 
 .item-sit{
@@ -65,12 +67,14 @@ hr{
   max-width: 50rem;
 }
 
-
 /* Nav Bar Styling Extra */
   #nav{
     background-color: #D2232A;
     position:fixed;
-    z-index: +1;
+    transition: all 300ms ease;
+    z-index: +3;
+    top: 0;
+  left: 0;
   }
   .nav-link{
     color: white;
@@ -104,6 +108,14 @@ hr{
   .dropdown-item:hover{
     background-color: #99171A;
   }
+
+  /* Navbar appear on scroll up not on scroll down */
+  #nav.scroll-down {
+    transform: translateY(-100%);
+  }
+#nav.scroll-up{
+  transform: translateY(0);
+}
   /* Push start of page below NavBar */
   #nav-space{
     height: 7rem;
@@ -176,10 +188,11 @@ hr{
       max-width: 1200px;
     }
       .tab {
-        padding: 4vw 4vw;
+        padding: 3vw 0;
         font-size: 2vw;
         /* flex makes each tab take up an equal portion of the container's width. */
         flex:1;
+        flex-basis: 0;
         text-align: center;
         text-decoration: none;
         color: white;
@@ -198,7 +211,7 @@ hr{
       flex-direction: column;
       max-width: 400px;
       }
-      .tab{ padding: 10vw 0.5vw;
+      .tab{ padding: 10vw 0;
         font-size: 5vw;
       }
     }
@@ -211,7 +224,7 @@ hr{
      
     }
     .table-style td{
-      background-color: #F1F2F3 !important;
+      background-color: transparent !important;
     }
     .table-style tr{
       border-left: 1px solid #D9DBDC;
@@ -238,4 +251,9 @@ hr{
       top: 0;
       height: 100%;
       width: 100%;
+  }
+
+  /* Document Library/ Club Policies Specific */
+  .list li{
+    margin-top: 5px;
   }
