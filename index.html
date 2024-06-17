@@ -36,7 +36,7 @@
             <h1>Welcome to Greenwich Sports Club</h1>
           </div>
         </div>
-        <div class="row justify-content-start">
+        <div class="row">
           <div class="col p-5 intro-text"> 
             <P>A community sports club in Sydney's Lower North Shore with teams in Senior Mens and Womens Football, MiniRoos, Junior Mixed and Girl's Football, NetSetGo and Junior Girls Netball.
             </P> 
@@ -44,7 +44,8 @@
         </div>
         <!--Photo insert-->
         <div class="row">
-          <div class="col intro-photo">
+          <div class="col">
+            <img class = "img-fluid" src ="./images/other/bob-campbell-oval.jpg" alt ="Bob Campbell Oval">
           </div>
         </div>
       </div>
@@ -52,18 +53,18 @@
 
     <!--Build Sports Information Links -->
     <section class = "container">
-      <div class="text-center row p-4">
+      <div class="text-center row p-5">
         <div class="col">
           <h2> Sports </h2> 
         </div>
       
         <div class = "row"> </div>
-        <div class="col text-read page py-5">
+        <div class="col page">
           <p >Whether you are new to the area or just looking for a friendly place to play
           sport, GSC is a fantastic choice.  If you are interested in playing football 
           for Greenwich Sports Club, please contact the appropriate 
-          <a class= "link" href="./contact.html#football-contact" title="Football Age Group Coordinator">age group coordinator</a> 
-          with any enquiries. For netball, please contact the <a href="mailto:netball@greenwichsportsclub.com.au" target="_top" title="Netball Convenor">netball convenor</a>. 
+          <a href="./contact.html#football-contact" title="Football Age Group Coordinator">age group coordinator</a> 
+          with any enquiries. For netball, please contact the <a href="./contact.html#netball-contact" title="Netball Convenor">netball convenor</a>. 
           </p>
         </div>
       </div>
@@ -72,28 +73,32 @@
       <!--Call to Play-->
       <section class = "container-fluid">
         <div class="row py-4 background-1">
-          <div class="col-md-2"></div>
-          <div class="col-md-4 my-3 item-sit"> 
-            <div class="card text-center" style="width: 20rem;">
-              <img src="./images/football/footballPlaying.jpg" class="card-img-top" alt="Playing Football">
-              <div class="card-body">
-                <h5 class="card-title">Football</h5>
-                <p class="card-text">Registrations for the 2024 Football winter season are now open</p>
-                <a href="#" class="btn btn-danger">Find Out More</a>
+        <!-- <div class="col-md-2"></div>--> 
+          <div class="offset-md-2 col-md-4">
+            <div class ="item-sit">
+              <div class="card text-center" style="width: 20rem;">
+                <img src="./images/football/footballPlaying.jpg" class="card-img-top" alt="Playing Football">
+                <div class="card-body">
+                  <h5 class="card-title">Football</h5>
+                  <p class="card-text">Registrations for the 2024 Football winter season are now open</p>
+                  <a href="#" class="btn btn-danger">Find Out More</a>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-4">
+            <div class ="item-sit">
+              <div class="card text-center" style="width: 20rem;">
+                <img src="./images/netball/netballPlaying.jpg" class="card-img-top" alt="Playing Netball">
+                <div class="card-body">
+                  <h5 class="card-title">Netball</h5>
+                  <p class="card-text">Registrations for the 2024 Netball winter season are now open</p>
+                  <a href="#" class="btn btn-danger">Find Out More</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 my-3 item-sit"> 
-            <div class="card text-center" style="width: 20rem;">
-              <img src="./images/netball/netballPlaying.jpg" class="card-img-top" alt="Playing Netball">
-              <div class="card-body">
-                <h5 class="card-title">Netball</h5>
-                <p class="card-text">Registrations for the 2024 Netball winter season are now open</p>
-                <a href="#" class="btn btn-danger">Find Out More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2"></div>
+          <!-- <div class="col-md-2"></div>-->
         </div>
        </section>
     
@@ -105,16 +110,13 @@
             <h2>Club News</h2>
           </div>
           <!--News #1-->
-          <div class="row gx-5 club-section pt-5">
-            <div class="col-md-6 mb-4">
-              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+          <div class="row gx-5 news-section">
+            <div class="col-md-6 my-4">
+              <div class="item-sit">
                 <img src="./images/football/goalScored.jpg" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask"></div>
-                </a>
               </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 my-4">
               <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">Important</span>
               <h4>The Commitee urgently needs volunteers</h4>
               <p class="text-muted">
@@ -126,16 +128,13 @@
           </div>
           
           <!--News #2-->
-          <div class="row gx-5 club-section pt-5">
-            <div class="col-md-6 mb-4">
-              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask"></div>
-                </a>
+          <div class="row gx-5 news-section">
+            <div class="col-md-6 my-4">
+              <div class="item-sit">
+                <img src="./images/other/GSC_picnic_day_2016.jpg" class="img-fluid" />
               </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 my-4">
               <h4>Congratulations Award Winners</h4>
               <p class="text-muted">
                 Congratulations to our 2022 Award Winners

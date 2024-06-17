@@ -7,256 +7,151 @@
   <!-- Import Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Import CSS Greenwich style-->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
   <!--Important Greenwich Football Club Key Information-->
   <title>Greenwich Sports Club | Home </title>
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Greenwich Sports Club,Sydney,Australia,Greenwich,Greenwich Football Club,Greenwich Netball,Football,Soccer,Womens Football,Womens Soccer,Womens Football Sydney,Womens Soccer Sydney,Netball,MiniRoos,Junior Football,Senior Football,Junior Netball,Senior Netball,NetSetGo">
-  <link rel="icon" type="image/x-icon" href="./Assets/GSCLogo4xTransparent.png">
+  <link rel="icon" type="image/x-icon" href="../images/logos/GSCLogo4xTransparent.png">
   
   <!-- Import JQuery then Bootstrap JS and then Personal Javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
+  <!--Insert HTML Components -->
+  <script src="../index.js" charset="utf-8"></script>
 </head>
 
 <body>
-  
-  <!-- Nav Bar-->
-  <nav id="nav" class="container-fluid navbar sticky-top navbar-expand-lg nav-content">
-      <a class="navbar-brand logo-text ps-5" href="./index.html">
-        <img src="./Assets/GSCLogo4xTransparent.png" alt="Greenwich Sports Club Logo" width="100" height="100" class="d-inline-block align-text-center nav-logo">
-        Greenwich Sports Club
-      </a>
-      <!--Collapsable Navbar-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Insert Navbar-->
+  <div id="navbar-placeholder"></div>
+  <!--Build space for nav bar at top of page-->
+  <div id = "nav-space"></div>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        
-        <ul class = "navbar-nav pe-5">
-
-          <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-
-          <li class="nav-item">
-              <a class="nav-link"  href="./Football/footballHome.html">Membership</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./Football/footballHome.html">About</a></li>
-                <li><a class="dropdown-item"href="about/childsafe.html">Fees</a></li>
-                <li><a class="dropdown-item"href="about/wwcpp.html">Member Protection</a></li>
-                <li><a class="dropdown-item" href="about/membership_fees.html">Working With Children</a></li>
-                <li><a class="dropdown-item" href="about/active_kids.html">Active Kids</a></li>
-              </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="./Football/footballHome.html">Football</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Game Day</a></li>
-              <li><a class="dropdown-item"href="#">Junior</a></li>
-              <li><a class="dropdown-item"href="#">Senior</a></li>
-              <li><a class="dropdown-item" href="#">Coaching</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link">Netball</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Junior</a></li>
-              <li><a class="dropdown-item"href="#">Senior</a></li>
-              <li><a class="dropdown-item"href="#">Coaching</a></li>
-              <li><a class="dropdown-item" href="#">Umpiring</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link">Club</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">History</a></li>
-              <li><a class="dropdown-item"href="#">Merchandise</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-        </ul>
-      </div>
-  </nav>
-    <!--Build space for nav bar at top of page-->
-      <div id = "nav-space" class="container-fluid">
-      </div>
-
-
-   <!--Home Page Content --> 
   <main>
-    <!-- Welcome -->
-    <section id = "welcome" class = "container">
-        <div class="text-center mt-5">
-          <div class="row">
-            <div class="col">
-              <h1>Welcome to Greenwich Sports Club</h1>
-            </div>
+    <!-- Begin Content -->
+    <section class = "container page">
+      <!--Header Intro-->
+      <h1>Membership & Fees</h1>
+      <hr/>
+        <div class="row">
+          <div class="col-md-10 offset-md-1"> 
+            <p> The Club prides itself on maintaining membership fees that are fair and reasonable in line with neighbouring clubs offering grassroots Football and Netball. For the detailed policy please refer to the Club's <a href="../library/club-policies/Fee Policy.pdf">fee policy</a>.</p>
+            <p>For information on the Active Kids NSW Government Programme please <a href ="#active-kids" title="Active Kids Section"> see below</a>.</p>
           </div>
-          <div class="row justify-content-start">
-            <div class="col p-5 intro-text"> 
-              <P>A community sports club in Sydney's Lower North Shore with teams in Senior Mens and Womens Football, MiniRoos, Junior Mixed and Girl's Football, NetSetGo and Junior Girls Netball.
-              </P> 
-            </div>
-          </div>
-          <div class="row">
-            <div class="col intro-photo">
-            </div>
-          </div>
-        </div>
+        </div>  
     </section>
 
-    <!--Build Sports Information Links -->
-    <section id = "info" class = "container">
-      <div class="text-center p-5">
-        <div class="row p-4">
-          <div class="col">
-            <h2> Sports </h2> 
-          </div>
-        </div>
 
-        <div class="text-read">
-          <p >Whether you are new to the area or just looking for a friendly place to play
-          sport, GSC is a fantastic choice.  If you are interested in playing football 
-          for Greenwich Sports Club, please contact the appropriate 
-          <a href="contact/index.html#footballAgeGroupCoordinator" title="Football Age Group Coordinator">age group coordinator</a> 
-          with any enquiries. For netball, please contact the <a href="mailto:netball@greenwichsportsclub.com.au" target="_top" title="Netball Convenor">netball convenor</a>. 
+  <!--Second Section-->
+  <section class="container-fluid background-1">
+    <div class = "container page">
+      <div id="netball-fees" class="row">
+        <div class="col-md-10 offset-md-1 table-responsive">
+          <h3>Netball Fees - 2024</h3>
+            <table class="table table-style my-3">
+              <thead>
+                  <th class = "style-position" scope="col">Age Group</th>
+                  <th class = "style-person" scope="col">Membership Fee</th>
+              </thead>
+            <tr>
+              <td>NetSetGo</td>
+              <td>$ 220.00</td>
+            </tr>
+            <tr>
+              <td>Junior Netball</td>
+              <td>$ 220.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="football-fees" class="row">
+        <div class="col-md-10 offset-md-1 table-responsive">
+          <h3>Football Fees - 2024</h3>
+            <table class="table table-style my-3">
+              <thead>
+                  <th class = "style-position" scope="col">Age Group</th>
+                  <th class = "style-person" scope="col">Membership Fee</th>
+              </thead>
+              <tr>
+                <td>U6 - U7</td>
+                <td>$ 200.00</td>
+              </tr>
+              <tr>
+                <td>U8 - U9</td>
+                <td>$ 215.00</td>
+              </tr>
+              <tr>
+                <td>U10 - U11</td>
+                <td>$ 225.00</td>
+              </tr>
+              <tr>
+                <td>U12 - U15</td>
+                <td>$ 270.00</td>
+              </tr>
+              <tr>
+                <td>U16</td>
+                <td>$ 280.00</td>
+              </tr>
+              <tr>
+                <td>U18</td>
+                <td>$ 290.00</td>
+              </tr>
+              <tr>
+                <td>Adult Full-Time Student*</td>
+                <td>$ 360.00</td>
+              </tr>
+              <tr>
+                <td>Adult All Age</td>
+                <td>$ 440.00</td>
+              </tr>
+              <tr>
+                <td>Adult 35+</td>
+                <td>$ 450.00</td>
+              </tr>					
+          </table>
+          <p>Football fees across age groups vary due to the different length of matches, the size of field hired and whether Referees and Assistant Referees may be officiating.</p>
+          <p>* Adults who are Full-Time students at a tertiary educational institution must provide satisfactory evidence of a current enrollment to the Club Secretary before 31 March. Your registration will remain provisional until the verification step is completed and you will not be eligible to play matches.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--Forth Section-->
+  <section class="container-fluid background-2">
+    <div class = "container page">
+      <div id="active-kids" class="row">
+        <div class="col-md-10 offset-md-1 table-responsive">
+          <h3>Active Kids</h3>
+          <p>The Active Kids programme is a NSW Government initiative to encourage school age children to participate
+            in physical activity by providing a means tested $50 voucher to offset the
+            cost of membership or participation fees.</p>
+          <p>The programme commenced on 31 Jan 2018 and the NSW Government information is
+            <a href="https://sport.nsw.gov.au/sectordevelopment/activekids" target="_blank" title="Active Kids">here</a>
+            for parents/guardians.
+          </p>
+          <h5>Football</h5>
+          <p>The FFA player registration system provides parents with the ability to enter an Active Kids
+            voucher code before proceeding to the payment step.
+          </p>
+          <h5>Netball</h5>
+          <p>Netball NSW also accepts Active Kids vouchers for Netball registrations.</p>
+        
+          <p>Please note that the voucher can't be split between sports.
           </p>
         </div>
-      </section>
-   
-      <!--Call to Play-->
-      <section class = "container-fluid">
-        <div class="row py-4 card-background">
-          <div class="col-md-1 my-3">
-          </div>
-          <div class="col-md-5 my-3 d-flex justify-content-center"> 
-            <div class="card text-center" style="width: 20rem;">
-              <img src="./Assets/footballPlaying.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Football</h5>
-                <p class="card-text">Registrations for the 2024 Netball season are now open</p>
-                <a href="#" class="btn btn-danger">Find Out More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 my-3 d-flex justify-content-center"> 
-            <div class="card text-center" style="width: 20rem;">
-              <img src="./Assets/netballPlaying.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Netball</h5>
-                <p class="card-text">Registrations for the 2024 Football winter season are now open</p>
-                <a href="#" class="btn btn-danger">Find Out More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 my-3">
-          </div>
-        </div>
-       </section>
-    
-    <!-- Club News Tab -->
-    <section  class = "container">
-        <div class="mt-5 row justify-content-start">
-          
-          <div class="col p-4 text-center"> 
-            <h2>Club News</h2>
-          </div>
-          <!--News #1-->
-          <div class="row gx-5 club-section pt-5">
-            <div class="col-md-6 mb-4">
-              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask"></div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">Important</span>
-              <h4>The Commitee urgently needs volunteers</h4>
-              <p class="text-muted">
-                The committee urgently needs volunteers, particularly for the roles of Registrar, Secretary, Communications and Grounds Manager. 
-                If you could help the committee in any way, please contact: president@greenwichsportsclub.com.au
-              </p>
-              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Contact</button>
-            </div>
-          </div>
-          
-          <!--News #2-->
-          <div class="row gx-5 club-section pt-5">
-            <div class="col-md-6 mb-4">
-              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask"></div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <h4>Congratulations Award Winners</h4>
-              <p class="text-muted">
-                Congratulations to our 2022 Award Winners
-              </p>
-              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Read more</button>
-            </div>
-          </div>
-
-        </div>
-    </section>
-
-<!--Section: News of the day-->
-
-
-<!--Section: News of the day-->
-
-    <!-- Sponsors Tab -->
-    <section id = "sponsors" class = "container">
-      <div class="text-center mt-5">
-        <div class="row justify-content-start">
-          <div class="col p-4"> 
-           <h2>Sponsors</h2>
-          </div>
-          <div><p>INsert Sponsor Here</p></div>
-        </div>
       </div>
-    </section>
-    
-    <!-- Short Summary -->
-    <section id = "short-summary" class = "container">
-      <div class="text-center mt-5">
-        <div class="row justify-content-start">
-          <div class="col p-4"> 
+    </div>
+  </section>
 
-            <p>For general Club enquiries please contact the Secretary on secretary@greenwichsportsclub.com.au. </p>
-            <p> For all other club contact details, please click here.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
   </main>
  
 
-  <!-- Footer Tab -->
-    <footer id="footer" class="container-fluid text-center pt-3">
-      <div class="footer-link-flex">
-        <a class = "nav-link nav-item" href="#">Home</a> 
-        <a class = "nav-link nav-item" href="#">Membership</a> 
-        <a class = "nav-link nav-item" href="#">Football</a>
-        <a class = "nav-link nav-item" href="#">Netball</a>
-        <a class = "nav-link nav-item" href="#">Club</a>
-        <a class = "nav-link nav-item" href="#">Contacts</a>
-        <a class = "nav-link nav-item" href="#">Document Library</a>
-        <a class = "nav-link nav-item" href="#">Site Map</a> 
-      </div>
-        <p>
-          <img src="./Assets/GSCLogo4xTransparent.png" alt="Greenwich Sports Club Logo" width="100" height="100" class="bi me-2">
-        </p>
-          <p class = "copyright"> ©  2024 Greenwich Sports Club. All rights reserved.</p>
-    </footer>
+  <!-- Insert Footer -->
+  <div id="footer-placeholder"></div>
 
 </body>
 

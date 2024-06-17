@@ -17,10 +17,14 @@ h3{
 h4{
   font-weight: bold;
 }
+h5{
+  font-weight: bold; 
+}
 a {
   text-decoration: underline;
   color:#333333;
   background:transparent;
+  z-index: 2;
 }
 a:hover{
   color:#D2232A;
@@ -34,23 +38,14 @@ hr{
   opacity: 100;
   margin-bottom: 2rem;
 }
-
-.item-sit{
-  display:flex;
-  justify-content: center;
-  margin: 1rem;
-}
 .background-1{
   background-color: #FFFFFF;
 }
-
 .background-2{
   background-color: #F1F2F3;
 }
-
 .background-3{
   background-color: #D9DBDC;
-
 }
 
 
@@ -62,10 +57,31 @@ hr{
   padding: 1.5rem;
   position: relative;
 }
-
 .text{
   max-width: 50rem;
 }
+.item-sit{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Due to the fixed NavBar (see below code) offset every anchor tag with the below class so links to sections show the right headings */
+.anchor-offset {
+  display:block;
+  padding-top: 130px; /* Adjust this value based on navbar height */
+  margin-top: -130px; /* Negative margin to offset */
+  z-index: -5; /*move behind everyhting on screen */
+}
+
+@media (max-width: 768.5px) {
+  .anchor-offset {
+    padding-top: 95px; /* Adjust this value based on navbar height */
+    margin-top: -95px; /* Negative margin to offset */
+    z-index: -5;
+  }
+}
+
 
 /* Nav Bar Styling Extra */
   #nav{
@@ -73,8 +89,6 @@ hr{
     position:fixed;
     transition: all 300ms ease;
     z-index: +3;
-    top: 0;
-  left: 0;
   }
   .nav-link{
     color: white;
@@ -95,9 +109,9 @@ hr{
     font-weight: bold;
   }
   /* NavBar Hover */
-  .nav-item:hover .dropdown-menu {
+   .nav-item:hover .dropdown-menu {
     display: block;
-  }
+  } 
   /* Nav Display Hover */
   .dropdown-menu {
     background-color: #B31B21;
@@ -109,29 +123,24 @@ hr{
     background-color: #99171A;
   }
 
-  /* Navbar appear on scroll up not on scroll down */
-  #nav.scroll-down {
-    transform: translateY(-100%);
-  }
-#nav.scroll-up{
-  transform: translateY(0);
-}
   /* Push start of page below NavBar */
   #nav-space{
     height: 7rem;
     margin-bottom: 3rem;
-    }
+  }
+
   /* Nav Bar change for small devices - shrink nav*/
   @media (max-width: 768.5px) {
     .nav-logo {
       width: 4rem;
     }
     #nav-space{
-      height: 6rem;
+      height: 4rem;
     } 
     .logo-text{
       margin-left: 0.5rem;
-      }
+      margin-right: 0rem;
+    }
   }
 
 
@@ -153,13 +162,6 @@ hr{
 /* ----------------------- Main ------------------- */
   /* Home Page Specific CSS */
     /* Intro Text */
-    .intro-photo{
-    background-image: url('./images/other/bob-campbell-oval.jpg');
-    /*width: 95%;*/
-    height: 80vh; 
-    background-size: cover; /* Ensures the image covers the whole div */
-    background-position: center; /* Centers the image */
-    }
     .intro-text{
     background-color: None;
     font-size: 1.5rem;
@@ -168,13 +170,17 @@ hr{
     }
 
     /* Club section */
-    .club-section {
+    .news-section {
     background-color: #D9DBDC;
     border-radius: 1%;
     border: 1px solid #F1F2F3;
     }
     .mask{
     background-color: rgba(251, 251, 251, 0.15);
+    }
+
+    .news-section img{
+      max-height: 300px;
     }
 
 
@@ -216,6 +222,33 @@ hr{
       }
     }
 
+  /* Merchandise Page */
+  .merchandise-text{
+    text-align: center;
+  
+  }
+  .merchandise-pic{
+    max-height: 350px;
+    max-width: 350px;
+  }
+
+  /* Volunteer Page */ 
+  .pdf-container {
+    position: relative;
+    padding-bottom: 70%; /* 16:9 ratio is with 56.25%*/
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f7f7f7;
+  }
+  .pdf-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
   /*Contact Page Specific CSS*/
     /* Bootstrap Table Style Changes*/
     .table-style th{

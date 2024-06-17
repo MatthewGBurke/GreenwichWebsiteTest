@@ -65,7 +65,8 @@ $(document).ready(function() {
           console.log("Navbar loaded successfully.");
       }
 
-    
+      // Load the navbar and run the logic after it is loaded
+  loadNavbar();
     
     //Repeat for Footer
     function loadFooter() {
@@ -132,8 +133,7 @@ $(document).ready(function() {
 
 
 
-  // Load the navbar and run the logic after it is loaded
-  loadNavbar();
+
  
 
 
